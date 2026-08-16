@@ -41,12 +41,12 @@ body {
     width: 100%;
     background: var(--background);
     text-align: center;
-    padding: 24px 30px 18px;
+    padding: 16px 20px 12px;
 }
 
 .site-header img {
     display: block;
-    width: min(100%, 1100px);
+    width: min(100%, 750px);
     height: auto;
     margin: 0 auto;
 }
