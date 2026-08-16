@@ -1,0 +1,181 @@
+/* --------------------------------------------------
+   SAREO
+   Simple, clean research-organization website
+-------------------------------------------------- */
+
+:root {
+    --background: #eee9dc;
+    --paper: #f7f4eb;
+    --text: #26322d;
+    --muted: #68716b;
+    --line: #c9c5b8;
+    --accent: #53685d;
+}
+
+/* Basic reset */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background: var(--background);
+    color: var(--text);
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    line-height: 1.7;
+}
+
+/* Header */
+
+.site-header {
+    width: 100%;
+    background: var(--background);
+    text-align: center;
+    padding: 24px 30px 18px;
+}
+
+.site-header img {
+    display: block;
+    width: min(100%, 1100px);
+    height: auto;
+    margin: 0 auto;
+}
+
+/* Navigation */
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+
+    padding: 0 20px;
+}
+
+.navigation a {
+    color: var(--text);
+    text-decoration: none;
+
+    padding: 15px 28px;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    font-size: 0.82rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+
+    transition: background-color 0.2s ease,
+                color 0.2s ease;
+}
+
+.navigation a:hover {
+    background: var(--accent);
+    color: var(--paper);
+}
+
+/* Main content */
+
+main {
+    width: min(100% - 40px, 900px);
+    margin: 0 auto;
+}
+
+/* Sections */
+
+.section {
+    background: var(--paper);
+
+    margin: 55px 0;
+    padding: 55px 65px;
+
+    border: 1px solid var(--line);
+}
+
+.section h1 {
+    margin: 0 0 20px;
+
+    font-size: 2rem;
+    font-weight: normal;
+
+    letter-spacing: 0.03em;
+}
+
+.section p {
+    max-width: 700px;
+
+    margin: 0;
+
+    color: #4d554f;
+    font-size: 1.05rem;
+}
+
+/* Footer */
+
+footer {
+    border-top: 1px solid var(--line);
+
+    padding: 30px 20px;
+    margin-top: 70px;
+
+    text-align: center;
+
+    color: var(--muted);
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    .site-header {
+        padding: 15px;
+    }
+
+    .navigation {
+        display: block;
+        padding: 0;
+    }
+
+    .navigation a {
+        display: block;
+        text-align: center;
+        padding: 12px;
+        border-bottom: 1px solid var(--line);
+    }
+
+    main {
+        width: min(100% - 24px, 900px);
+    }
+
+    .section {
+        margin: 30px 0;
+        padding: 35px 25px;
+    }
+
+    .section h1 {
+        font-size: 1.7rem;
+    }
+}
