@@ -189,3 +189,7 @@ footer {
 .home-intro {
     text-align: center;
 }
+
+.home-intro p {
+    margin-bottom: 1.5rem;
+}
