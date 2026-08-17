@@ -230,3 +230,10 @@ footer {
 #field-journal p {
     margin-bottom: 1.5rem;
 }
+
+.footer-logo {
+    display: block;
+    width: 120px;
+    height: auto;
+    margin: 0 auto 20px;
+}
