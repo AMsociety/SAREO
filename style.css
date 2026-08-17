@@ -179,3 +179,9 @@ footer {
         font-size: 1.7rem;
     }
 }
+
+.regional-image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
