@@ -218,3 +218,7 @@ footer {
     font-size: 0.65rem;
     letter-spacing: 0.04em;
 }
+
+#research p {
+    margin-bottom: 1.5rem;
+}
